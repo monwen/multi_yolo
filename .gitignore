@@ -1,0 +1,4 @@
+*.ipynb
+*.mp4
+*.avi
+yolov3.weights
