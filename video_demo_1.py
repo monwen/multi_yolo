@@ -172,7 +172,7 @@ if __name__ == '__main__':
     model, CUDA = model_init()
 
     model.net_info["height"] = 416
-    videofile = './video_data/6.mp4'
+    videofile = '8.mp4'
     cap = cv2.VideoCapture(videofile)
     selection = [96, 416, 608]
     assert cap.isOpened(), 'Cannot capture source'

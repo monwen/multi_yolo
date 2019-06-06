@@ -412,8 +412,8 @@ if __name__ == '__main__':
     # fetch_base()
     #fetch_base_loop()
     # acc_test()
-    #acc_skip_test()
-    print('git test')
+    acc_skip_test()
+    #print('git test')
 
 
 

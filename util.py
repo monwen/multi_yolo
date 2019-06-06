@@ -108,11 +108,11 @@ def write_results(prediction, confidence, num_classes, nms = True, nms_conf = 0.
     
     
     box_a = prediction.new(prediction.shape)
-    box_a[:,:,0] = (prediction[:,:,0] - prediction[:,:,2]/2)
-    box_a[:,:,1] = (prediction[:,:,1] - prediction[:,:,3]/2)
-    box_a[:,:,2] = (prediction[:,:,0] + prediction[:,:,2]/2) 
-    box_a[:,:,3] = (prediction[:,:,1] + prediction[:,:,3]/2)
-    prediction[:,:,:4] = box_a[:,:,:4]
+    box_a[:, :, 0] = (prediction[:, :, 0] - prediction[:, :, 2]/2)
+    box_a[:, :, 1] = (prediction[:, :, 1] - prediction[:, :, 3]/2)
+    box_a[:, :, 2] = (prediction[:, :, 0] + prediction[:, :, 2]/2)
+    box_a[:, :, 3] = (prediction[:, :, 1] + prediction[:, :, 3]/2)
+    prediction[:, :, :4] = box_a[:, :, :4]
     
 
     
